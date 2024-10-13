@@ -1,0 +1,12 @@
+<ul class="products">
+  <li class="product" *ngFor="let product of filteredProducts">
+    <img [src]="product.imageUrl" alt="{{ product.name }}" />
+    <h2 class="name">{{ product.name }}</h2>
+    <h4 class="price">{{ product.price | currency }}</h4>
+    <h4 class="price">{{ product.discount | currency }}</h4>
+    <div class="buttons">
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </li>
+</ul>

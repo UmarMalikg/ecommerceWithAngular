@@ -1,0 +1,12 @@
+<div class="sidebar">
+  <div class="searchBox">
+    <input type="search" (input)="onSearchChange($event)" />
+  </div>
+  <div class="filters">
+    <app-check-box
+      *ngFor="let category of categories"
+      [label]="category"
+      [category]="category"
+    ></app-check-box>
+  </div>
+</div>
